@@ -86,7 +86,7 @@ namespace KingOfKingsFrms
 
         private void button2_Click(object sender, EventArgs e)
         {
-          
+            FormPainel(new FrmPedido());
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -147,6 +147,11 @@ namespace KingOfKingsFrms
         private void button11_Click(object sender, EventArgs e)
         {
             FormPainel(new FormEstoque());
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

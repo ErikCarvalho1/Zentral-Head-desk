@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KingoOfKingsClass\KingOfKingsClass.csproj" />
+    <ProjectReference Include="..\KingoOfKingsClass\ZentralHeadClass.csproj" />
   </ItemGroup>
 
   <ItemGroup>

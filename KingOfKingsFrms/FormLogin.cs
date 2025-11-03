@@ -37,7 +37,7 @@ namespace KingOfKingsFrms
 
         private void button2_Click(object sender, EventArgs e)
         {
-          
+
         }
 
 
@@ -63,10 +63,10 @@ namespace KingOfKingsFrms
 
             if (usuario.Id > 0)
             {
-             //  registroDeAcesso.RegistrarAcesso();
+                //  registroDeAcesso.RegistrarAcesso();
                 if (usuario.Ativo)
                 {
-                    Program.UsuarioLogado = usuario; 
+                    Program.UsuarioLogado = usuario;
                     FormPrincipal formPrincipal = new FormPrincipal();
                     formPrincipal.Show();
                     this.Hide();
@@ -86,7 +86,7 @@ namespace KingOfKingsFrms
 
         }
 
-       
+
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -99,7 +99,7 @@ namespace KingOfKingsFrms
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e) // método para mostrar a senha
-       
+
         {
             txtSenha.UseSystemPasswordChar = false;
             pictureBox1.Image = Properties.Resources.exibirSenha;
@@ -110,6 +110,11 @@ namespace KingOfKingsFrms
         {
             txtSenha.UseSystemPasswordChar = true;
             pictureBox1.Image = Properties.Resources.ocultarSenha;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

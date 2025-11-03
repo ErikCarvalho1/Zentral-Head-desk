@@ -17,7 +17,7 @@ namespace KingOfKingsFrms
         public FormCadastrarUsuario()
         {
             InitializeComponent();
-        
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -144,7 +144,7 @@ namespace KingOfKingsFrms
         private void CarregaNivel()
         {
             List<Nivel> lista = Nivel.ObterLista(); // Este método precisa retornar List<Nivel>
-         
+
             cmbNivel.DataSource = lista;
             cmbNivel.DisplayMember = "Nome"; // o que aparece visualmente
             cmbNivel.ValueMember = "Id";     // valor usado para identificação
@@ -185,6 +185,11 @@ namespace KingOfKingsFrms
         }
 
         private void bntBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

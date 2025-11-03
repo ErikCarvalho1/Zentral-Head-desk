@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace KingOfKingsFrms.Properties {
+namespace ZentralHeadFrms.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace KingOfKingsFrms.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("KingOfKingsFrms.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ZentralHeadFrms.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -166,6 +166,16 @@ namespace KingOfKingsFrms.Properties {
         internal static System.Drawing.Bitmap exibirSenha {
             get {
                 object obj = ResourceManager.GetObject("exibirSenha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundoZendralC_ {
+            get {
+                object obj = ResourceManager.GetObject("fundoZendralC#", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,6 +406,36 @@ namespace KingOfKingsFrms.Properties {
         internal static System.Drawing.Bitmap usuario_senha {
             get {
                 object obj = ResourceManager.GetObject("usuario senha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zentralC_ {
+            get {
+                object obj = ResourceManager.GetObject("zentralC#", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zentralC_1 {
+            get {
+                object obj = ResourceManager.GetObject("zentralC#1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zentralheadFundoC_ {
+            get {
+                object obj = ResourceManager.GetObject("zentralheadFundoC#", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
