@@ -94,13 +94,13 @@
             // 
             // bntBuscar
             // 
-            bntBuscar.BackgroundImage = Properties.Resources.Buscar;
             bntBuscar.FlatStyle = FlatStyle.Flat;
             bntBuscar.ForeColor = SystemColors.ActiveCaptionText;
             bntBuscar.Location = new Point(427, 88);
             bntBuscar.Name = "bntBuscar";
             bntBuscar.Size = new Size(97, 35);
             bntBuscar.TabIndex = 9;
+            bntBuscar.Text = "Buscar";
             bntBuscar.UseVisualStyleBackColor = true;
             bntBuscar.Click += bntBuscar_Click;
             // 
@@ -125,19 +125,19 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Stencil", 21.75F, FontStyle.Bold);
-            label6.ForeColor = Color.FromArgb(219, 179, 91);
+            label6.Font = new Font("Bernard MT Condensed", 21.75F);
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(329, 18);
             label6.Name = "label6";
-            label6.Size = new Size(146, 34);
+            label6.Size = new Size(100, 34);
             label6.TabIndex = 46;
             label6.Text = "Estoque";
             // 
             // dd
             // 
             dd.AutoSize = true;
-            dd.BackColor = SystemColors.ActiveCaptionText;
-            dd.ForeColor = Color.FromArgb(219, 179, 91);
+            dd.BackColor = Color.White;
+            dd.ForeColor = Color.Black;
             dd.Location = new Point(173, 75);
             dd.Name = "dd";
             dd.Size = new Size(40, 15);
@@ -147,8 +147,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.ActiveCaptionText;
-            label1.ForeColor = Color.FromArgb(219, 179, 91);
+            label1.BackColor = Color.White;
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(329, 77);
             label1.Name = "label1";
             label1.Size = new Size(69, 15);
@@ -158,8 +158,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.ActiveCaptionText;
-            label2.ForeColor = Color.FromArgb(219, 179, 91);
+            label2.BackColor = Color.White;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(173, 118);
             label2.Name = "label2";
             label2.Size = new Size(108, 15);
@@ -215,7 +215,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.leaoFundo;
+            BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(txtProdutoId);
             Controls.Add(txtEstoqueId);

@@ -174,12 +174,17 @@ namespace KingOfKingsFrms
                 dtpDataNasc.Value = cliente.DataNascimento;
 
                 // Carregar endereços no grid
-               
+
             }
             else
             {
                 MessageBox.Show("Cliente não encontrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
