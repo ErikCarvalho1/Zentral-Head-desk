@@ -45,10 +45,10 @@
             // 
             // panel1
             // 
-            panel1.BackgroundImage = Properties.Resources.zentralC_;
-            panel1.Location = new Point(12, 28);
+            panel1.BackgroundImage = Properties.Resources.kingLeaoLogin;
+            panel1.Location = new Point(34, 27);
             panel1.Name = "panel1";
-            panel1.Size = new Size(180, 40);
+            panel1.Size = new Size(84, 77);
             panel1.TabIndex = 0;
             // 
             // txtEmail
@@ -68,14 +68,14 @@
             // 
             // bntAcessar
             // 
-            bntAcessar.BackColor = Color.White;
+            bntAcessar.BackColor = SystemColors.ActiveCaptionText;
+            bntAcessar.BackgroundImage = Properties.Resources.bntAcessar;
             bntAcessar.Cursor = Cursors.Hand;
             bntAcessar.FlatStyle = FlatStyle.Flat;
             bntAcessar.Location = new Point(220, 195);
             bntAcessar.Name = "bntAcessar";
             bntAcessar.Size = new Size(100, 38);
             bntAcessar.TabIndex = 3;
-            bntAcessar.Text = "Acessar";
             bntAcessar.UseVisualStyleBackColor = false;
             bntAcessar.Click += bntAcessar_Click;
             // 
@@ -120,7 +120,7 @@
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = Properties.Resources.ocultarSenha;
-            pictureBox1.Location = new Point(407, 151);
+            pictureBox1.Location = new Point(397, 160);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(39, 38);
             pictureBox1.TabIndex = 11;
@@ -132,20 +132,19 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Impact", 21.75F, FontStyle.Bold);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(219, 73);
+            label1.Font = new Font("Stencil", 21.75F, FontStyle.Bold);
+            label1.ForeColor = Color.FromArgb(219, 179, 91);
+            label1.Location = new Point(220, 70);
             label1.Name = "label1";
-            label1.Size = new Size(84, 36);
+            label1.Size = new Size(101, 34);
             label1.TabIndex = 12;
             label1.Text = "Login";
-            label1.Click += label1_Click;
             // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(532, 337);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
@@ -161,7 +160,6 @@
             MinimizeBox = false;
             Name = "FormLogin";
             ShowIcon = false;
-            StartPosition = FormStartPosition.CenterParent;
             Load += FormLogin_Load;
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
