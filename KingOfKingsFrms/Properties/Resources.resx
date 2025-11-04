@@ -139,6 +139,9 @@
   <data name="king of kings login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\king of kings login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="usuarioNovo (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuarioNovo (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ajuda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ajuda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,6 +184,9 @@
   <data name="sair" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fundoZendralC#" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundoZendralC#1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="kingofkings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kingofkings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -195,6 +201,12 @@
   </data>
   <data name="dog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SalvarGbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SalvarGbtn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zentralC#" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zentralC#2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LeaoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LeaoLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,10 +226,16 @@
   <data name="linha dorada (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\linha dorada (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="senhaNovo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\senhaNovo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usuarioNovo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuarioNovo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="kingLeaoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kingLeaoLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SalvarGbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SalvarGbtn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fundoZendralC#1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundoZendralC#2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
