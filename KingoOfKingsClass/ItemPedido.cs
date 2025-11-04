@@ -65,18 +65,26 @@ namespace KingOfKingsClass
         }
         public void inserir()
         {
-            // sp_itempedido_insert`(sppedido_id int, spproduto_id int,
+            // sp_itempedido_insert(sppedido_id int, spproduto_id int,
             // spquantidade decimal(10, 3), spdesconto decimal(10, 2))
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.CommandText = "sp_itempedido_insert";
-            cmd.Parameters.AddWithValue("sppedido_id ", PedidoId);
+            cmd.Parameters.AddWithValue("sppedido_id", PedidoId);
             cmd.Parameters.AddWithValue("spproduto_id", Produto.Id);
             cmd.Parameters.AddWithValue("spquantidade", Quantidade);
             cmd.Parameters.AddWithValue("spdesconto", Desconto);
-            Id = Convert.ToInt32(cmd.ExecuteScalar);
+
+            var resultado = cmd.ExecuteScalar();
+            if (resultado != null)
+            {
+                Id = Convert.ToInt32(resultado);
+            }
+
             cmd.Connection.Close();
         }
+
+        
         public bool Atualizar()
         {
 

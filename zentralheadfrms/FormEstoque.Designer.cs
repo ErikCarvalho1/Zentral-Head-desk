@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             dgvEstoque = new DataGridView();
             clnId = new DataGridViewTextBoxColumn();
+            clnProdutoId = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
@@ -44,7 +45,6 @@
             label2 = new Label();
             txtQuantidade = new TextBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            button1 = new Button();
             mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             txtEstoqueId = new TextBox();
             txtProdutoId = new TextBox();
@@ -53,20 +53,29 @@
             // 
             // dgvEstoque
             // 
-            dgvEstoque.BackgroundColor = Color.Black;
+            dgvEstoque.BackgroundColor = Color.White;
             dgvEstoque.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvEstoque.Columns.AddRange(new DataGridViewColumn[] { clnId, Column2, Column3, Column4 });
+            dgvEstoque.Columns.AddRange(new DataGridViewColumn[] { clnId, clnProdutoId, Column2, Column3, Column4 });
             dgvEstoque.Location = new Point(173, 167);
             dgvEstoque.Name = "dgvEstoque";
             dgvEstoque.RowHeadersVisible = false;
-            dgvEstoque.Size = new Size(432, 217);
+            dgvEstoque.Size = new Size(338, 217);
             dgvEstoque.TabIndex = 0;
+            dgvEstoque.CellClick += dgvEstoque_CellClick_1;
             dgvEstoque.CellContentClick += dgvEstoque_CellContentClick;
             // 
             // clnId
             // 
+            clnId.Frozen = true;
             clnId.HeaderText = "Id";
             clnId.Name = "clnId";
+            clnId.Visible = false;
+            // 
+            // clnProdutoId
+            // 
+            clnProdutoId.HeaderText = "produtoID";
+            clnProdutoId.Name = "clnProdutoId";
+            clnProdutoId.Visible = false;
             // 
             // Column2
             // 
@@ -94,19 +103,19 @@
             // 
             // bntBuscar
             // 
-            bntBuscar.BackgroundImage = Properties.Resources.Buscar;
             bntBuscar.FlatStyle = FlatStyle.Flat;
             bntBuscar.ForeColor = SystemColors.ActiveCaptionText;
-            bntBuscar.Location = new Point(427, 88);
+            bntBuscar.Location = new Point(427, 95);
             bntBuscar.Name = "bntBuscar";
-            bntBuscar.Size = new Size(97, 35);
+            bntBuscar.Size = new Size(84, 28);
             bntBuscar.TabIndex = 9;
+            bntBuscar.Text = "Buscar";
             bntBuscar.UseVisualStyleBackColor = true;
             bntBuscar.Click += bntBuscar_Click;
             // 
             // bntEditar
             // 
-            bntEditar.Location = new Point(530, 94);
+            bntEditar.Location = new Point(427, 138);
             bntEditar.Name = "bntEditar";
             bntEditar.Size = new Size(75, 23);
             bntEditar.TabIndex = 11;
@@ -125,19 +134,19 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Stencil", 21.75F, FontStyle.Bold);
-            label6.ForeColor = Color.FromArgb(219, 179, 91);
-            label6.Location = new Point(329, 18);
+            label6.Font = new Font("Impact", 21.75F, FontStyle.Bold);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(304, 16);
             label6.Name = "label6";
-            label6.Size = new Size(146, 34);
+            label6.Size = new Size(117, 36);
             label6.TabIndex = 46;
             label6.Text = "Estoque";
             // 
             // dd
             // 
             dd.AutoSize = true;
-            dd.BackColor = SystemColors.ActiveCaptionText;
-            dd.ForeColor = Color.FromArgb(219, 179, 91);
+            dd.BackColor = SystemColors.ButtonHighlight;
+            dd.ForeColor = Color.Black;
             dd.Location = new Point(173, 75);
             dd.Name = "dd";
             dd.Size = new Size(40, 15);
@@ -147,8 +156,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.ActiveCaptionText;
-            label1.ForeColor = Color.FromArgb(219, 179, 91);
+            label1.BackColor = Color.White;
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(329, 77);
             label1.Name = "label1";
             label1.Size = new Size(69, 15);
@@ -158,8 +167,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.ActiveCaptionText;
-            label2.ForeColor = Color.FromArgb(219, 179, 91);
+            label2.BackColor = Color.White;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(173, 118);
             label2.Name = "label2";
             label2.Size = new Size(108, 15);
@@ -179,16 +188,6 @@
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
             // 
-            // button1
-            // 
-            button1.Location = new Point(436, 138);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 51;
-            button1.Text = "Cadastrar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
             // mySqlCommand1
             // 
             mySqlCommand1.CacheAge = 0;
@@ -199,27 +198,28 @@
             // txtEstoqueId
             // 
             txtEstoqueId.Enabled = false;
-            txtEstoqueId.Location = new Point(64, 67);
+            txtEstoqueId.Location = new Point(48, 29);
             txtEstoqueId.Name = "txtEstoqueId";
             txtEstoqueId.Size = new Size(34, 23);
             txtEstoqueId.TabIndex = 52;
+            txtEstoqueId.Visible = false;
             // 
             // txtProdutoId
             // 
-            txtProdutoId.Location = new Point(64, 18);
+            txtProdutoId.Location = new Point(50, 1);
             txtProdutoId.Name = "txtProdutoId";
-            txtProdutoId.Size = new Size(100, 23);
+            txtProdutoId.Size = new Size(32, 23);
             txtProdutoId.TabIndex = 53;
+            txtProdutoId.Visible = false;
             // 
             // FormEstoque
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.leaoFundo;
+            BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(txtProdutoId);
             Controls.Add(txtEstoqueId);
-            Controls.Add(button1);
             Controls.Add(txtQuantidade);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -252,13 +252,13 @@
         private Label label2;
         private TextBox txtQuantidade;
         private ContextMenuStrip contextMenuStrip1;
-        private Button button1;
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
         private TextBox txtEstoqueId;
+        private TextBox txtProdutoId;
         private DataGridViewTextBoxColumn clnId;
+        private DataGridViewTextBoxColumn clnProdutoId;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
-        private TextBox txtProdutoId;
     }
 }

@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `kings`.`clientes` (
   UNIQUE INDEX `cpf_UNIQUE` (`cpf` ASC) VISIBLE,
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 10016;
+AUTO_INCREMENT = 10017;
 
 
 -- -----------------------------------------------------
@@ -126,7 +126,7 @@ CREATE TABLE IF NOT EXISTS `kings`.`pedidos` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 100001;
+AUTO_INCREMENT = 100014;
 
 
 -- -----------------------------------------------------
@@ -237,7 +237,7 @@ CREATE TABLE IF NOT EXISTS `kings`.`produtos` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 7400005;
+AUTO_INCREMENT = 7400008;
 
 
 -- -----------------------------------------------------
@@ -295,7 +295,8 @@ CREATE TABLE IF NOT EXISTS `kings`.`itempedido` (
     REFERENCES `kings`.`produtos` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB
+AUTO_INCREMENT = 3;
 
 
 -- -----------------------------------------------------

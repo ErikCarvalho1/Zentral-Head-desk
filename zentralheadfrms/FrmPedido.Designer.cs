@@ -1,6 +1,6 @@
 ﻿namespace KingOfKingsFrms
 {
-    partial class formPedido
+    partial class FrmPedido
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             clnValorUnit = new DataGridViewTextBoxColumn();
             clnDescontoItem = new DataGridViewTextBoxColumn();
             clnTotalItem = new DataGridViewTextBoxColumn();
@@ -73,6 +79,12 @@
             txtUsuario = new TextBox();
             label3 = new Label();
             grbIndentificacao = new GroupBox();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvItensPedido).BeginInit();
             grbItens.SuspendLayout();
             grbIndentificacao.SuspendLayout();
@@ -80,6 +92,10 @@
             // 
             // clnValorUnit
             // 
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            clnValorUnit.DefaultCellStyle = dataGridViewCellStyle1;
             clnValorUnit.Frozen = true;
             clnValorUnit.HeaderText = "Valor Unit";
             clnValorUnit.Name = "clnValorUnit";
@@ -88,6 +104,10 @@
             // 
             // clnDescontoItem
             // 
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = null;
+            clnDescontoItem.DefaultCellStyle = dataGridViewCellStyle2;
             clnDescontoItem.Frozen = true;
             clnDescontoItem.HeaderText = "Desconto";
             clnDescontoItem.Name = "clnDescontoItem";
@@ -96,6 +116,10 @@
             // 
             // clnTotalItem
             // 
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "C2";
+            dataGridViewCellStyle3.NullValue = null;
+            clnTotalItem.DefaultCellStyle = dataGridViewCellStyle3;
             clnTotalItem.Frozen = true;
             clnTotalItem.HeaderText = "Total";
             clnTotalItem.Name = "clnTotalItem";
@@ -106,18 +130,17 @@
             // 
             txtIdPedido.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtIdPedido.ForeColor = Color.Red;
-            txtIdPedido.Location = new Point(581, 17);
+            txtIdPedido.Location = new Point(565, -48);
             txtIdPedido.Name = "txtIdPedido";
             txtIdPedido.Size = new Size(181, 43);
             txtIdPedido.TabIndex = 14;
-            txtIdPedido.TextChanged += txtIdPedido_TextChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Crimson;
-            label2.Location = new Point(473, 24);
+            label2.Location = new Point(457, -41);
             label2.Name = "label2";
             label2.Size = new Size(102, 32);
             label2.TabIndex = 16;
@@ -128,7 +151,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.RoyalBlue;
-            label1.Location = new Point(159, 17);
+            label1.Location = new Point(143, -48);
             label1.Name = "label1";
             label1.Size = new Size(169, 31);
             label1.TabIndex = 12;
@@ -136,6 +159,10 @@
             // 
             // clnQuantidade
             // 
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "N3";
+            dataGridViewCellStyle4.NullValue = null;
+            clnQuantidade.DefaultCellStyle = dataGridViewCellStyle4;
             clnQuantidade.Frozen = true;
             clnQuantidade.HeaderText = "Quant";
             clnQuantidade.Name = "clnQuantidade";
@@ -144,9 +171,9 @@
             // 
             // txtIdProd
             // 
-            txtIdProd.Location = new Point(22, 18);
+            txtIdProd.Location = new Point(22, 16);
             txtIdProd.Name = "txtIdProd";
-            txtIdProd.Size = new Size(110, 23);
+            txtIdProd.Size = new Size(100, 23);
             txtIdProd.TabIndex = 16;
             // 
             // label4
@@ -185,7 +212,7 @@
             // 
             txtSubTotalItens.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtSubTotalItens.ForeColor = Color.Navy;
-            txtSubTotalItens.Location = new Point(506, 285);
+            txtSubTotalItens.Location = new Point(509, 479);
             txtSubTotalItens.Name = "txtSubTotalItens";
             txtSubTotalItens.ReadOnly = true;
             txtSubTotalItens.Size = new Size(122, 33);
@@ -196,11 +223,11 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(340, 293);
+            label10.Location = new Point(339, 482);
             label10.Name = "label10";
-            label10.Size = new Size(160, 25);
+            label10.Size = new Size(164, 25);
             label10.TabIndex = 12;
-            label10.Text = "SubTotal Itens R$";
+            label10.Text = "Subtotal  Itens R$";
             // 
             // label9
             // 
@@ -213,7 +240,7 @@
             // 
             // txtSubTotal
             // 
-            txtSubTotal.Location = new Point(691, 308);
+            txtSubTotal.Location = new Point(675, 243);
             txtSubTotal.Name = "txtSubTotal";
             txtSubTotal.ReadOnly = true;
             txtSubTotal.Size = new Size(118, 23);
@@ -274,6 +301,7 @@
             txtQuantidade.Size = new Size(53, 23);
             txtQuantidade.TabIndex = 3;
             txtQuantidade.Text = "1";
+            txtQuantidade.TextChanged += txtQuantidade_TextChanged;
             // 
             // txtValorUnit
             // 
@@ -285,7 +313,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(691, 451);
+            label14.Location = new Point(675, 386);
             label14.Name = "label14";
             label14.Size = new Size(36, 15);
             label14.TabIndex = 20;
@@ -294,7 +322,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(691, 363);
+            label12.Location = new Point(675, 298);
             label12.Name = "label12";
             label12.Size = new Size(88, 15);
             label12.TabIndex = 21;
@@ -303,7 +331,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(691, 289);
+            label11.Location = new Point(675, 224);
             label11.Name = "label11";
             label11.Size = new Size(53, 15);
             label11.TabIndex = 22;
@@ -311,7 +339,7 @@
             // 
             // txtDescontoPedido
             // 
-            txtDescontoPedido.Location = new Point(691, 425);
+            txtDescontoPedido.Location = new Point(675, 360);
             txtDescontoPedido.Name = "txtDescontoPedido";
             txtDescontoPedido.Size = new Size(118, 23);
             txtDescontoPedido.TabIndex = 19;
@@ -320,7 +348,7 @@
             // 
             // txtDescontoItens
             // 
-            txtDescontoItens.Location = new Point(691, 381);
+            txtDescontoItens.Location = new Point(675, 316);
             txtDescontoItens.Name = "txtDescontoItens";
             txtDescontoItens.ReadOnly = true;
             txtDescontoItens.Size = new Size(118, 23);
@@ -331,7 +359,7 @@
             // txtTotal
             // 
             txtTotal.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtTotal.Location = new Point(691, 469);
+            txtTotal.Location = new Point(675, 404);
             txtTotal.Name = "txtTotal";
             txtTotal.ReadOnly = true;
             txtTotal.Size = new Size(118, 29);
@@ -341,7 +369,7 @@
             // 
             // btnFechar
             // 
-            btnFechar.Location = new Point(709, 518);
+            btnFechar.Location = new Point(693, 453);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(75, 42);
             btnFechar.TabIndex = 13;
@@ -367,6 +395,9 @@
             // 
             // clnSeq
             // 
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.NullValue = null;
+            clnSeq.DefaultCellStyle = dataGridViewCellStyle5;
             clnSeq.Frozen = true;
             clnSeq.HeaderText = "#SEQ";
             clnSeq.Name = "clnSeq";
@@ -395,12 +426,24 @@
             dgvItensPedido.AllowUserToAddRows = false;
             dgvItensPedido.AllowUserToDeleteRows = false;
             dgvItensPedido.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvItensPedido.Location = new Point(6, 105);
+            dgvItensPedido.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = SystemColors.Window;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle6.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            dgvItensPedido.DefaultCellStyle = dataGridViewCellStyle6;
+            dgvItensPedido.Location = new Point(6, 112);
             dgvItensPedido.Name = "dgvItensPedido";
             dgvItensPedido.ReadOnly = true;
             dgvItensPedido.RowHeadersVisible = false;
-            dgvItensPedido.Size = new Size(620, 173);
+            dgvItensPedido.ScrollBars = ScrollBars.Vertical;
+            dgvItensPedido.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvItensPedido.Size = new Size(590, 173);
             dgvItensPedido.TabIndex = 0;
+            dgvItensPedido.CellContentClick += dgvItensPedido_CellContentClick;
             // 
             // clnDescricao
             // 
@@ -413,7 +456,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(691, 407);
+            label13.Location = new Point(675, 342);
             label13.Name = "label13";
             label13.Size = new Size(57, 15);
             label13.TabIndex = 23;
@@ -425,8 +468,6 @@
             grbItens.Controls.Add(label4);
             grbItens.Controls.Add(radioButton2);
             grbItens.Controls.Add(radioButton1);
-            grbItens.Controls.Add(txtSubTotalItens);
-            grbItens.Controls.Add(label10);
             grbItens.Controls.Add(label9);
             grbItens.Controls.Add(label8);
             grbItens.Controls.Add(label7);
@@ -440,7 +481,7 @@
             grbItens.Controls.Add(btnAddItem);
             grbItens.Controls.Add(dgvItensPedido);
             grbItens.Enabled = false;
-            grbItens.Location = new Point(24, 236);
+            grbItens.Location = new Point(8, 171);
             grbItens.Name = "grbItens";
             grbItens.Size = new Size(634, 327);
             grbItens.TabIndex = 11;
@@ -451,7 +492,7 @@
             // 
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(34, 87);
+            button1.Location = new Point(-1, 55);
             button1.Name = "button1";
             button1.Size = new Size(87, 40);
             button1.TabIndex = 3;
@@ -461,7 +502,7 @@
             // 
             // btnInserePedido
             // 
-            btnInserePedido.Location = new Point(506, 44);
+            btnInserePedido.Location = new Point(506, 22);
             btnInserePedido.Name = "btnInserePedido";
             btnInserePedido.Size = new Size(90, 62);
             btnInserePedido.TabIndex = 1;
@@ -472,7 +513,7 @@
             // txtIdCliente
             // 
             txtIdCliente.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtIdCliente.Location = new Point(127, 93);
+            txtIdCliente.Location = new Point(92, 61);
             txtIdCliente.Name = "txtIdCliente";
             txtIdCliente.Size = new Size(78, 27);
             txtIdCliente.TabIndex = 0;
@@ -481,26 +522,25 @@
             // txtNomeCliente
             // 
             txtNomeCliente.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNomeCliente.Location = new Point(211, 93);
+            txtNomeCliente.Location = new Point(176, 61);
             txtNomeCliente.Name = "txtNomeCliente";
-            txtNomeCliente.Size = new Size(255, 27);
+            txtNomeCliente.ReadOnly = true;
+            txtNomeCliente.Size = new Size(288, 27);
             txtNomeCliente.TabIndex = 1;
-            txtNomeCliente.TextChanged += txtNomeCliente_TextChanged;
             // 
             // txtUsuario
             // 
             txtUsuario.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsuario.Location = new Point(92, 37);
+            txtUsuario.Location = new Point(92, 22);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.ReadOnly = true;
             txtUsuario.Size = new Size(372, 27);
             txtUsuario.TabIndex = 1;
-            txtUsuario.TextChanged += txtUsuario_TextChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(34, 44);
+            label3.Location = new Point(22, 34);
             label3.Name = "label3";
             label3.Size = new Size(47, 15);
             label3.TabIndex = 0;
@@ -514,23 +554,61 @@
             grbIndentificacao.Controls.Add(txtNomeCliente);
             grbIndentificacao.Controls.Add(txtUsuario);
             grbIndentificacao.Controls.Add(label3);
-            grbIndentificacao.Location = new Point(24, 78);
+            grbIndentificacao.Location = new Point(8, 13);
             grbIndentificacao.Name = "grbIndentificacao";
             grbIndentificacao.Size = new Size(634, 152);
             grbIndentificacao.TabIndex = 10;
             grbIndentificacao.TabStop = false;
             grbIndentificacao.Text = "Identificação";
             // 
-            // formPedido
+            // Column1
+            // 
+            Column1.HeaderText = "Item";
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Código de barras";
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Descrição";
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Valor unitario";
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Quantidade";
+            Column5.Name = "Column5";
+            Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            Column6.HeaderText = "Desconto";
+            Column6.Name = "Column6";
+            Column6.ReadOnly = true;
+            // 
+            // FrmPedido
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(832, 581);
+            ClientSize = new Size(830, 526);
             Controls.Add(txtIdPedido);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtSubTotal);
+            Controls.Add(txtSubTotalItens);
             Controls.Add(label14);
+            Controls.Add(label10);
             Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(txtDescontoPedido);
@@ -540,9 +618,9 @@
             Controls.Add(label13);
             Controls.Add(grbItens);
             Controls.Add(grbIndentificacao);
-            Name = "formPedido";
-            Text = "formPedido";
-            Load += formPedido_Load;
+            Name = "FrmPedido";
+            Text = "FromPedido";
+            Load += FromPedido_Load;
             ((System.ComponentModel.ISupportInitialize)dgvItensPedido).EndInit();
             grbItens.ResumeLayout(false);
             grbItens.PerformLayout();
@@ -599,5 +677,11 @@
         private TextBox txtUsuario;
         private Label label3;
         private GroupBox grbIndentificacao;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column6;
     }
 }

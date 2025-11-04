@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace KingOfKingsClass
 {
    public class Produto
@@ -170,5 +171,28 @@ namespace KingOfKingsClass
             cmd.Connection.Close();
             return produtos;
         }
+        private bool DarBaixaEstoque(int produtoId, double quantidade)
+        {
+            try
+            {
+                var cmd = Banco.Abrir();
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = "UPDATE produtos SET quantidade_estoque = quantidade_estoque - @quantidade WHERE id = @id AND quantidade_estoque - @quantidade >= estoque_minimo";
+                cmd.Parameters.AddWithValue("@quantidade", quantidade);
+                cmd.Parameters.AddWithValue("@id", produtoId);
+
+                int linhasAfetadas = cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+
+                return linhasAfetadas > 0; // se atualizou alguma linha, sucesso
+            }
+            catch (Exception ex)
+            {
+              
+                return false;
+            }
+        }
+
+
     }
 }

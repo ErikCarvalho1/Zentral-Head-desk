@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingOfKingsClass", "KingoOfKingsClass\KingOfKingsClass.csproj", "{AA473B37-F5E9-4993-9433-CEE823772E85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZentralHeadClass", "KingoOfKingsClass\ZentralHeadClass.csproj", "{AA473B37-F5E9-4993-9433-CEE823772E85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingOfKingsFrms", "KingOfKingsFrms\KingOfKingsFrms.csproj", "{2E106685-AD1C-46F4-88E0-02AA94C3C7E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZentralHeadFrms", "KingOfKingsFrms\ZentralHeadFrms.csproj", "{2E106685-AD1C-46F4-88E0-02AA94C3C7E6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{AA473B37-F5E9-4993-9433-CEE823772E85} = {AA473B37-F5E9-4993-9433-CEE823772E85}
 	EndProjectSection
