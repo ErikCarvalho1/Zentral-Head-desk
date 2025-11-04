@@ -29,29 +29,71 @@
         private void InitializeComponent()
         {
             dgvProduto = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
             txtProdutos = new TextBox();
             Produtos = new Label();
             label2 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             button1 = new Button();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvProduto).BeginInit();
             SuspendLayout();
             // 
             // dgvProduto
             // 
-            dgvProduto.BackgroundColor = Color.White;
+            dgvProduto.BackgroundColor = Color.Black;
             dgvProduto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvProduto.Columns.AddRange(new DataGridViewColumn[] { Column1, Column3, Column2, Column4 });
-            dgvProduto.Location = new Point(248, 142);
+            dgvProduto.Location = new Point(187, 144);
             dgvProduto.Name = "dgvProduto";
             dgvProduto.RowHeadersVisible = false;
             dgvProduto.Size = new Size(389, 304);
             dgvProduto.TabIndex = 0;
             dgvProduto.CellContentClick += dgvProdutos_CellContentClick;
+            // 
+            // txtProdutos
+            // 
+            txtProdutos.Location = new Point(248, 106);
+            txtProdutos.Name = "txtProdutos";
+            txtProdutos.Size = new Size(311, 23);
+            txtProdutos.TabIndex = 2;
+            txtProdutos.TextChanged += txtProdutos_TextChanged;
+            // 
+            // Produtos
+            // 
+            Produtos.AutoSize = true;
+            Produtos.BackColor = Color.Black;
+            Produtos.ForeColor = Color.FromArgb(219, 179, 91);
+            Produtos.Location = new Point(187, 109);
+            Produtos.Name = "Produtos";
+            Produtos.Size = new Size(55, 15);
+            Produtos.TabIndex = 3;
+            Produtos.Text = "Produtos";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = SystemColors.ActiveCaptionText;
+            label2.Font = new Font("Stencil", 21.75F, FontStyle.Bold);
+            label2.ForeColor = Color.FromArgb(219, 179, 91);
+            label2.Location = new Point(296, 27);
+            label2.Name = "label2";
+            label2.Size = new Size(280, 34);
+            label2.TabIndex = 18;
+            label2.Text = "Listar Produtos";
+            // 
+            // button1
+            // 
+            button1.BackgroundImage = Properties.Resources.Buscar;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(565, 96);
+            button1.Name = "button1";
+            button1.Size = new Size(98, 40);
+            button1.TabIndex = 19;
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // Column1
             // 
@@ -76,53 +118,11 @@
             Column4.HeaderText = "Valor unitario";
             Column4.Name = "Column4";
             // 
-            // txtProdutos
-            // 
-            txtProdutos.Location = new Point(248, 111);
-            txtProdutos.Name = "txtProdutos";
-            txtProdutos.Size = new Size(311, 23);
-            txtProdutos.TabIndex = 2;
-            txtProdutos.TextChanged += txtProdutos_TextChanged;
-            // 
-            // Produtos
-            // 
-            Produtos.AutoSize = true;
-            Produtos.BackColor = Color.White;
-            Produtos.ForeColor = Color.Black;
-            Produtos.Location = new Point(187, 114);
-            Produtos.Name = "Produtos";
-            Produtos.Size = new Size(55, 15);
-            Produtos.TabIndex = 3;
-            Produtos.Text = "Produtos";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.White;
-            label2.Font = new Font("Impact", 21.75F, FontStyle.Bold);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(314, 48);
-            label2.Name = "label2";
-            label2.Size = new Size(210, 36);
-            label2.TabIndex = 18;
-            label2.Text = "Listar Produtos";
-            // 
-            // button1
-            // 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(565, 106);
-            button1.Name = "button1";
-            button1.Size = new Size(72, 30);
-            button1.TabIndex = 19;
-            button1.Text = "Buscar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_1;
-            // 
             // FormListarProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackgroundImage = Properties.Resources.leaoFundo;
             ClientSize = new Size(887, 517);
             Controls.Add(button1);
             Controls.Add(label2);

@@ -128,7 +128,7 @@
             // 
             // chkDescontinuado
             // 
-            chkDescontinuado.ForeColor = Color.Black;
+            chkDescontinuado.ForeColor = Color.FromArgb(219, 179, 91);
             chkDescontinuado.Location = new Point(296, 219);
             chkDescontinuado.Name = "chkDescontinuado";
             chkDescontinuado.Size = new Size(150, 24);
@@ -148,43 +148,37 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.BackColor = Color.WhiteSmoke;
+            btnSalvar.BackgroundImage = (Image)resources.GetObject("btnSalvar.BackgroundImage");
             btnSalvar.FlatStyle = FlatStyle.Popup;
             btnSalvar.Location = new Point(61, 263);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(102, 35);
             btnSalvar.TabIndex = 10;
-            btnSalvar.Text = "Salvar";
-            btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
             // 
             // btnEditar
             // 
-            btnEditar.BackColor = Color.WhiteSmoke;
+            btnEditar.BackgroundImage = (Image)resources.GetObject("btnEditar.BackgroundImage");
             btnEditar.FlatStyle = FlatStyle.Popup;
-            btnEditar.Location = new Point(169, 263);
+            btnEditar.Location = new Point(159, 263);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(102, 35);
             btnEditar.TabIndex = 10;
-            btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = false;
             // 
             // btnCancelar
             // 
-            btnCancelar.BackColor = Color.WhiteSmoke;
+            btnCancelar.BackgroundImage = (Image)resources.GetObject("btnCancelar.BackgroundImage");
             btnCancelar.FlatStyle = FlatStyle.Popup;
-            btnCancelar.Location = new Point(277, 263);
+            btnCancelar.Location = new Point(267, 263);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(101, 35);
             btnCancelar.TabIndex = 10;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.ForeColor = Color.Black;
+            label1.ForeColor = Color.FromArgb(219, 179, 91);
             label1.Location = new Point(20, 69);
             label1.Name = "label1";
             label1.Size = new Size(61, 15);
@@ -194,7 +188,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.ForeColor = Color.Black;
+            label2.ForeColor = Color.FromArgb(219, 179, 91);
             label2.Location = new Point(20, 98);
             label2.Name = "label2";
             label2.Size = new Size(58, 15);
@@ -204,7 +198,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.ForeColor = Color.Black;
+            label3.ForeColor = Color.FromArgb(219, 179, 91);
             label3.Location = new Point(20, 126);
             label3.Name = "label3";
             label3.Size = new Size(37, 15);
@@ -214,7 +208,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.ForeColor = Color.Black;
+            label4.ForeColor = Color.FromArgb(219, 179, 91);
             label4.Location = new Point(209, 129);
             label4.Name = "label4";
             label4.Size = new Size(86, 15);
@@ -224,7 +218,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.ForeColor = Color.Black;
+            label5.ForeColor = Color.FromArgb(219, 179, 91);
             label5.Location = new Point(20, 156);
             label5.Name = "label5";
             label5.Size = new Size(58, 15);
@@ -234,7 +228,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.ForeColor = Color.Black;
+            label6.ForeColor = Color.FromArgb(219, 179, 91);
             label6.Location = new Point(20, 188);
             label6.Name = "label6";
             label6.Size = new Size(94, 15);
@@ -244,7 +238,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.ForeColor = Color.Black;
+            label7.ForeColor = Color.FromArgb(219, 179, 91);
             label7.Location = new Point(239, 189);
             label7.Name = "label7";
             label7.Size = new Size(93, 15);
@@ -257,14 +251,12 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.WhiteSmoke;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.FlatStyle = FlatStyle.Popup;
             button1.Location = new Point(351, 53);
             button1.Name = "button1";
             button1.Size = new Size(95, 36);
             button1.TabIndex = 10;
-            button1.Text = "Buscar ";
-            button1.UseVisualStyleBackColor = false;
             // 
             // contextMenuStrip1
             // 
@@ -275,7 +267,7 @@
             // 
             btnCarregarImagem.BackColor = Color.Transparent;
             btnCarregarImagem.BackgroundImage = (Image)resources.GetObject("btnCarregarImagem.BackgroundImage");
-            btnCarregarImagem.ForeColor = Color.Black;
+            btnCarregarImagem.ForeColor = Color.FromArgb(219, 179, 91);
             btnCarregarImagem.Location = new Point(455, 213);
             btnCarregarImagem.Name = "btnCarregarImagem";
             btnCarregarImagem.Size = new Size(150, 30);
@@ -288,11 +280,11 @@
             // 
             label8.AutoSize = true;
             label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Impact", 21.75F, FontStyle.Bold);
-            label8.ForeColor = Color.Black;
+            label8.Font = new Font("Stencil", 21.75F, FontStyle.Bold);
+            label8.ForeColor = Color.FromArgb(219, 179, 91);
             label8.Location = new Point(91, 10);
             label8.Name = "label8";
-            label8.Size = new Size(308, 36);
+            label8.Size = new Size(394, 34);
             label8.TabIndex = 18;
             label8.Text = "Cadastro de Prdotudos";
             // 
@@ -300,7 +292,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.Black;
             ClientSize = new Size(670, 347);
             Controls.Add(label8);
             Controls.Add(label7);

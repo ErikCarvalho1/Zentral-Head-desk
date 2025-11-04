@@ -30,7 +30,6 @@
         {
             Daodo = new TabControl();
             tabPage1 = new TabPage();
-            bntBuscar = new Button();
             txtClienteId = new TextBox();
             mxtTelefone = new MaskedTextBox();
             mxtCpf = new MaskedTextBox();
@@ -73,6 +72,7 @@
             clnComplemento = new DataGridViewTextBoxColumn();
             clnBairro = new DataGridViewTextBoxColumn();
             clnCidade = new DataGridViewTextBoxColumn();
+            bntBuscar = new Button();
             Daodo.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -92,7 +92,8 @@
             // 
             // tabPage1
             // 
-            tabPage1.BackColor = Color.White;
+            tabPage1.BackColor = Color.Black;
+            tabPage1.BackgroundImage = Properties.Resources.leaoFundo;
             tabPage1.Controls.Add(bntBuscar);
             tabPage1.Controls.Add(txtClienteId);
             tabPage1.Controls.Add(mxtTelefone);
@@ -115,16 +116,6 @@
             tabPage1.Size = new Size(768, 376);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Dados Pessoais";
-            // 
-            // bntBuscar
-            // 
-            bntBuscar.Location = new Point(506, 84);
-            bntBuscar.Name = "bntBuscar";
-            bntBuscar.Size = new Size(75, 23);
-            bntBuscar.TabIndex = 69;
-            bntBuscar.Text = "button2";
-            bntBuscar.UseVisualStyleBackColor = true;
-            bntBuscar.Click += bntBuscar_Click;
             // 
             // txtClienteId
             // 
@@ -155,6 +146,7 @@
             // 
             // btnEditar
             // 
+            btnEditar.BackgroundImage = Properties.Resources.EditarGbtn;
             btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.Location = new Point(296, 212);
             btnEditar.Name = "btnEditar";
@@ -165,6 +157,7 @@
             // 
             // button1
             // 
+            button1.BackgroundImage = Properties.Resources.bntVoltar;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Location = new Point(176, 214);
             button1.Name = "button1";
@@ -183,10 +176,10 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.BackColor = Color.White;
+            label8.BackColor = Color.Black;
             label8.FlatStyle = FlatStyle.Popup;
             label8.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label8.ForeColor = Color.Black;
+            label8.ForeColor = Color.FromArgb(219, 179, 91);
             label8.Location = new Point(176, 66);
             label8.Name = "label8";
             label8.Size = new Size(44, 16);
@@ -195,6 +188,7 @@
             // 
             // btnCadastrar
             // 
+            btnCadastrar.BackgroundImage = Properties.Resources.bntCadastrar;
             btnCadastrar.FlatStyle = FlatStyle.Flat;
             btnCadastrar.Location = new Point(421, 211);
             btnCadastrar.Name = "btnCadastrar";
@@ -208,21 +202,20 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
-            label6.FlatStyle = FlatStyle.System;
-            label6.Font = new Font("Impact", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.Black;
+            label6.Font = new Font("Stencil", 21.75F, FontStyle.Bold);
+            label6.ForeColor = Color.FromArgb(219, 179, 91);
             label6.Location = new Point(220, 17);
             label6.Name = "label6";
-            label6.Size = new Size(248, 36);
+            label6.Size = new Size(323, 34);
             label6.TabIndex = 59;
             label6.Text = "Cadastrar  Cliente";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = SystemColors.ButtonHighlight;
+            label5.BackColor = SystemColors.ActiveCaptionText;
             label5.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label5.ForeColor = Color.Black;
+            label5.ForeColor = Color.FromArgb(219, 179, 91);
             label5.Location = new Point(176, 154);
             label5.Name = "label5";
             label5.Size = new Size(127, 16);
@@ -232,9 +225,9 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = SystemColors.ButtonHighlight;
+            label4.BackColor = SystemColors.ActiveCaptionText;
             label4.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label4.ForeColor = Color.Black;
+            label4.ForeColor = Color.FromArgb(219, 179, 91);
             label4.Location = new Point(358, 64);
             label4.Name = "label4";
             label4.Size = new Size(41, 16);
@@ -244,10 +237,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.White;
+            label3.BackColor = SystemColors.ActiveCaptionText;
             label3.Cursor = Cursors.SizeNWSE;
             label3.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label3.ForeColor = Color.Black;
+            label3.ForeColor = Color.FromArgb(219, 179, 91);
             label3.LiveSetting = System.Windows.Forms.Automation.AutomationLiveSetting.Assertive;
             label3.Location = new Point(176, 109);
             label3.Name = "label3";
@@ -258,9 +251,9 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.ButtonHighlight;
+            label2.BackColor = SystemColors.ActiveCaptionText;
             label2.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label2.ForeColor = Color.Black;
+            label2.ForeColor = Color.FromArgb(219, 179, 91);
             label2.Location = new Point(353, 111);
             label2.Name = "label2";
             label2.Size = new Size(27, 16);
@@ -285,6 +278,7 @@
             // 
             // tabPage2
             // 
+            tabPage2.BackgroundImage = Properties.Resources.leaoFundo;
             tabPage2.Controls.Add(txtUf);
             tabPage2.Controls.Add(mxtCep);
             tabPage2.Controls.Add(btninserir);
@@ -303,7 +297,6 @@
             tabPage2.Controls.Add(txtBairro);
             tabPage2.Controls.Add(txtLogradouro);
             tabPage2.Controls.Add(txtNumero);
-            tabPage2.ForeColor = SystemColors.ControlLightLight;
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
@@ -334,13 +327,12 @@
             // 
             // btninserir
             // 
+            btninserir.BackgroundImage = Properties.Resources.SalvarGbtn;
             btninserir.FlatStyle = FlatStyle.Flat;
-            btninserir.ForeColor = SystemColors.ActiveCaptionText;
             btninserir.Location = new Point(435, 312);
             btninserir.Name = "btninserir";
             btninserir.Size = new Size(103, 43);
             btninserir.TabIndex = 62;
-            btninserir.Text = "Salvar";
             btninserir.UseVisualStyleBackColor = true;
             btninserir.Click += btninserir_Click;
             // 
@@ -358,18 +350,18 @@
             // 
             label14.AutoSize = true;
             label14.BackColor = Color.Transparent;
-            label14.Font = new Font("Impact", 21.75F, FontStyle.Bold);
-            label14.ForeColor = Color.Black;
-            label14.Location = new Point(301, 23);
+            label14.Font = new Font("Stencil", 21.75F, FontStyle.Bold);
+            label14.ForeColor = Color.FromArgb(219, 179, 91);
+            label14.Location = new Point(307, 45);
             label14.Name = "label14";
-            label14.Size = new Size(139, 36);
+            label14.Size = new Size(167, 34);
             label14.TabIndex = 60;
             label14.Text = "ENDEREÇO";
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.ForeColor = Color.Black;
+            label13.ForeColor = Color.FromArgb(219, 179, 91);
             label13.Location = new Point(59, 235);
             label13.Name = "label13";
             label13.Size = new Size(82, 15);
@@ -389,7 +381,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.ForeColor = Color.Black;
+            label12.ForeColor = Color.FromArgb(219, 179, 91);
             label12.Location = new Point(98, 149);
             label12.Name = "label12";
             label12.Size = new Size(44, 15);
@@ -407,7 +399,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.ForeColor = Color.Black;
+            label11.ForeColor = Color.FromArgb(219, 179, 91);
             label11.Location = new Point(435, 117);
             label11.Name = "label11";
             label11.Size = new Size(21, 15);
@@ -417,7 +409,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.ForeColor = Color.Black;
+            label10.ForeColor = Color.FromArgb(219, 179, 91);
             label10.Location = new Point(58, 206);
             label10.Name = "label10";
             label10.Size = new Size(84, 15);
@@ -427,7 +419,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.ForeColor = Color.Black;
+            label9.ForeColor = Color.FromArgb(219, 179, 91);
             label9.Location = new Point(104, 175);
             label9.Name = "label9";
             label9.Size = new Size(38, 15);
@@ -437,7 +429,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.ForeColor = Color.Black;
+            label7.ForeColor = Color.FromArgb(219, 179, 91);
             label7.Location = new Point(74, 114);
             label7.Name = "label7";
             label7.Size = new Size(69, 15);
@@ -447,7 +439,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.ForeColor = Color.Black;
+            label1.ForeColor = Color.FromArgb(219, 179, 91);
             label1.Location = new Point(114, 86);
             label1.Name = "label1";
             label1.Size = new Size(28, 15);
@@ -490,11 +482,11 @@
             // 
             dgvEnderecos.AllowUserToAddRows = false;
             dgvEnderecos.AllowUserToDeleteRows = false;
-            dgvEnderecos.BackgroundColor = Color.White;
+            dgvEnderecos.BackgroundColor = Color.Black;
             dgvEnderecos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvEnderecos.Columns.AddRange(new DataGridViewColumn[] { nome, clnCep, clnLogradouro, clnNumero, clnComplemento, clnBairro, clnCidade });
             dgvEnderecos.GridColor = SystemColors.InactiveCaptionText;
-            dgvEnderecos.Location = new Point(130, 441);
+            dgvEnderecos.Location = new Point(114, 442);
             dgvEnderecos.Name = "dgvEnderecos";
             dgvEnderecos.ReadOnly = true;
             dgvEnderecos.RowHeadersVisible = false;
@@ -546,11 +538,21 @@
             clnCidade.Name = "clnCidade";
             clnCidade.ReadOnly = true;
             // 
+            // bntBuscar
+            // 
+            bntBuscar.Location = new Point(506, 84);
+            bntBuscar.Name = "bntBuscar";
+            bntBuscar.Size = new Size(75, 23);
+            bntBuscar.TabIndex = 69;
+            bntBuscar.Text = "button2";
+            bntBuscar.UseVisualStyleBackColor = true;
+            bntBuscar.Click += bntBuscar_Click;
+            // 
             // FormClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.Black;
             ClientSize = new Size(800, 631);
             Controls.Add(Daodo);
             Controls.Add(dgvEnderecos);
